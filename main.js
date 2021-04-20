@@ -84,6 +84,14 @@ function game() {
     console.log(resultString);
     console.log(`---------- SCORE ----------\nPlayer: ${playerScore} Computer: ${computerScore}\n${4 - i} rounds left`);
   }
+
+  if (playerScore > computerScore) {
+    console.log("-----YOU WIN THE GAME!!!-----");
+  } else if (computerScore > playerScore) {
+    console.log("You lose the game. Better luck next time!");
+  } else {
+    console.log("Well... the game ended in a tie.");
+  }
 }
 
 game();
